@@ -10,7 +10,8 @@ $(document).ready(function() {
 
       $("#articles").append("<div class = article >" + 
         `<p id = "title-${i}">` + data[i].title + "<br />" + "</p>" +
-        `<p id = "link-${i}">` + data[i].link + "</p>" +
+        `<a href = ${data[i].link} id = "link-${i}">` + data[i].link + "</a>" +
+         `<p id = "summary-${i}">` + data[i].summary + "</p>"+
         "<br>" +
         `<button class='save-article' id=${i} >Save</button>` +
         "</div>" 
